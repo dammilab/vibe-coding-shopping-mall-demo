@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.log
+logs/
+
+# Env (keep .env.example committed)
+.env
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store

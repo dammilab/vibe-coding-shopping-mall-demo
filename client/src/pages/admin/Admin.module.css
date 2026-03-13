@@ -1,0 +1,370 @@
+.page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  color: #888;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111;
+  cursor: pointer;
+}
+
+.badge {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #e53e3e;
+  border-radius: 4px;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.greeting {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.backBtn {
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.backBtn:hover {
+  background-color: #e0e0e0;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* ===== Header ===== */
+.header {
+  margin-bottom: 28px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #888;
+}
+
+/* ===== 통계 카드 ===== */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.statIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.statValue {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* ===== Section ===== */
+.section {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.countBadge {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  background-color: #f0f0f0;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+/* ===== 빠른 작업 ===== */
+.quickActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.actionBtn {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.actionBtn:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* ===== 테이블 공통 ===== */
+.tableWrap {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  text-align: left;
+  background-color: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.table td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* ===== 주문 테이블 ===== */
+.orderId {
+  font-size: 13px;
+  font-family: monospace;
+  color: #666;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.dateCell {
+  color: #888;
+  font-size: 13px;
+}
+
+/* ===== 주문 상태 뱃지 ===== */
+.statusBadge {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.statusPending {
+  color: #b7791f;
+  background-color: #fefcbf;
+}
+
+.statusShipping {
+  color: #2b6cb0;
+  background-color: #bee3f8;
+}
+
+.statusDone {
+  color: #276749;
+  background-color: #c6f6d5;
+}
+
+.statusCancel {
+  color: #9b2c2c;
+  background-color: #fed7d7;
+}
+
+/* ===== 회원 타입 뱃지 ===== */
+.typeBadge {
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.adminType {
+  color: #e53e3e;
+  background-color: #fff5f5;
+}
+
+.customerType {
+  color: #3182ce;
+  background-color: #ebf8ff;
+}
+
+.deleteBtn {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e53e3e;
+  background-color: #fff;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.deleteBtn:hover {
+  background-color: #fff5f5;
+}
+
+/* ===== 하단 관리 카드 ===== */
+.manageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.manageCard {
+  padding: 28px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.manageIcon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.manageTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.manageDesc {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.manageBtn {
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #111;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.manageBtn:hover {
+  background-color: #333;
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  .manageGrid {
+    grid-template-columns: 1fr;
+  }
+  .quickActions {
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,546 @@
+.page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 64px;
+  padding: 0 18px;
+  border-bottom: 1px solid #ececec;
+}
+
+.topTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconBtn {
+  min-width: 58px;
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 42px;
+}
+
+.imageSection {
+  min-width: 0;
+}
+
+.mainImageWrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbRow {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.thumbBtn {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+}
+
+.activeThumb {
+  border-color: #111;
+}
+
+.thumbImg {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.infoSection {
+  min-width: 0;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.newBadge,
+.saleBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.newBadge {
+  color: #fff;
+  background: #3cbf60;
+}
+
+.saleBadge {
+  color: #fff;
+  background: #db4455;
+}
+
+.name {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+  color: #111;
+}
+
+.rating {
+  margin: 12px 0 0;
+  font-size: 24px;
+  color: #666;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.salePrice {
+  font-size: 48px;
+  color: #111;
+}
+
+.originPrice {
+  font-size: 34px;
+  color: #9a9a9a;
+  text-decoration: line-through;
+}
+
+.percentBadge {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #c44f5e;
+  background: #fbe9ee;
+}
+
+.divider {
+  margin: 26px 0;
+  border-top: 1px solid #ececec;
+}
+
+.block {
+  margin-bottom: 26px;
+}
+
+.blockTitle {
+  margin: 0 0 12px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #222;
+}
+
+.sizeRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.sizeBtn {
+  height: 58px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 24px;
+  color: #111;
+  cursor: pointer;
+}
+
+.activeBtn {
+  border-color: #111;
+  font-weight: 700;
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.colorBtn {
+  width: 52px;
+  height: 52px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.activeColor {
+  border-color: #111;
+}
+
+.qtyRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.qtyBox {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.qtyBtn {
+  width: 54px;
+  height: 54px;
+  border: none;
+  background: #fff;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
+
+.qtyValue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  font-size: 26px;
+}
+
+.stockText {
+  font-size: 24px;
+  color: #666;
+}
+
+.addBagBtn {
+  width: 100%;
+  height: 66px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.wishlistBtn {
+  width: 100%;
+  height: 62px;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  background: #fff;
+  color: #444;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.actionMessage {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.benefitGrid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.benefitCard {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.benefitIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #f3f3f3;
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.benefitTitle {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.tabMenu {
+  margin-top: 24px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  gap: 8px;
+}
+
+.tabBtn {
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #888;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 2px;
+  cursor: pointer;
+}
+
+.activeTabBtn {
+  color: #111;
+  border-bottom-color: #111;
+}
+
+.tabPanel {
+  padding: 16px 0 0;
+}
+
+.tabText {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+}
+
+.tabSubText {
+  margin: 8px 0 0;
+  color: #777;
+  line-height: 1.6;
+}
+
+.featureList {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.recommendSection {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8px 24px 30px;
+}
+
+.recommendTitle {
+  margin: 0 0 14px;
+  font-size: 22px;
+  color: #111;
+}
+
+.recommendEmpty {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.recommendGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.recommendCard {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.recommendCard:hover {
+  transform: translateY(-3px);
+}
+
+.recommendImage {
+  width: 100%;
+  aspect-ratio: 3 / 3.8;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.recommendName {
+  margin: 10px 10px 4px;
+  font-size: 14px;
+  color: #222;
+}
+
+.recommendPrice {
+  margin: 0 10px 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+
+.messageWrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 14px;
+}
+
+.message {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  padding: 48px 20px;
+}
+
+.backBtn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .name {
+    font-size: 34px;
+  }
+
+  .salePrice {
+    font-size: 36px;
+  }
+
+  .originPrice {
+    font-size: 26px;
+  }
+
+  .blockTitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topTitle {
+    font-size: 18px;
+  }
+
+  .iconBtn {
+    min-width: 48px;
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+
+  .sizeBtn {
+    font-size: 16px;
+    height: 46px;
+  }
+
+  .colorBtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .qtyBtn {
+    width: 40px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .qtyValue {
+    width: 52px;
+    font-size: 18px;
+  }
+
+  .stockText {
+    font-size: 14px;
+  }
+
+  .addBagBtn {
+    font-size: 17px;
+    height: 52px;
+  }
+
+  .wishlistBtn {
+    font-size: 15px;
+    height: 48px;
+  }
+
+  .benefitGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendSection {
+    padding: 8px 16px 24px;
+  }
+
+  .recommendGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
