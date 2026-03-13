@@ -13,7 +13,12 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || true,
+    credentials: true,
+  })
+);
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
