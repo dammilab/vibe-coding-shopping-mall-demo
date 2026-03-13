@@ -1,0 +1,12 @@
+{
+  "name": "shoping-mall-demo",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "start": "cd server && node src/index.js",
+    "heroku-postbuild": "cd server && npm install"
+  }
+}
