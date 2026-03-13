@@ -28,4 +28,9 @@ app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+
+});
+
+app.get("/", (_req, res) => {
+  res.send("Dammi Mall API 서버가 정상 동작 중입니다.");
 });
